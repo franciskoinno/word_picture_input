@@ -20,3 +20,5 @@ print(len(from_arr))
 for folder in from_arr:
     convert(f"{from_dir}/{folder}/{folder}.docx", f"pdf/{folder}.pdf")
     time.sleep(1.2)
+
+# comments
