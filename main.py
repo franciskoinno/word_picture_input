@@ -19,8 +19,8 @@ def select_folder():
 
 
 # read csv
-print("Please select id_list CSV file")
-id_list_file = select_folder()
+# print("Please select id_list CSV file")
+id_list_file = "skip_excel - id_list (4).csv"
 df = pd.read_csv(id_list_file)
 
 while 1:
@@ -47,7 +47,7 @@ while 1:
     Image6 = mpimg.imread(f'photo/{from_arr[5:6][0]}')
     Image7 = mpimg.imread(f'photo/{from_arr[6:7][0]}')
     Image8 = mpimg.imread(f'photo/{from_arr[7:8][0]}')
-    Image9 = mpimg.imread(f'photo/{from_arr[8:9][0]}')
+
 
     # Adds a subplot at the 1st position
     fig.add_subplot(rows, columns, 1)
@@ -159,9 +159,9 @@ while 1:
 
     print(f"{skip_no} {skip_company} word successfully created!!!")
 
-    convert(f"skip_word_folder/{skip_no}/{skip_no}.docx", f"pdf/{skip_no}.pdf")
-    time.sleep(2)
-    print(f"\n{skip_no} {skip_company} pdf successfully created!!!\n")
+    #convert(f"skip_word_folder/{skip_no}/{skip_no}.docx", f"pdf/{skip_no}.pdf")
+    #time.sleep(2)
+    #print(f"\n{skip_no} {skip_company} pdf successfully created!!!\n")
 
     # del photo that are done
     for photo in from_arr[0:8]:
